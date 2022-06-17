@@ -8,8 +8,6 @@ ayadisamardev@gmail.com
 */
 /*----------------------------------------------*/
 
-
-
 /*----------------------1-----------------------*/
 /*
 Fonts & Font-faces 
@@ -20,68 +18,300 @@ Lato
 */
 /*---------------------------------------------*/
 
-
 /*----------------------2-----------------------*/
 /*                  DEFAULTS                    */
 
 /*----------------------------------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
+body{
+    font-family: "Avenir Next", Lato;
+    background-color: #FFFFFF;
+}
 
 /*----------------------3-----------------------*/
 /*               HELPER CLASSES                 */
 
 /*----------------------------------------------*/
 
-
 /*----------------------4-----------------------*/
 /*                    LAYOUT                    */
 
+
 /*----------------------------------------------*/
-
-
 
 /*----------------------5-----------------------*/
 /*                    HEADER                    */
 /*----------------------------------------------*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
 
+header .container .burger.is-visible-mobile {
+    display: none;
+}
 
+header .container .main-nav {
+    top: 1%;
+    bottom: 98.31%;
+    align-items: center;
+    height: 25px;
+    left: 929px;
+    top: 36px;
+}
+
+header .container .main-nav ul li {
+    /* padding: 1% 12.64% 98.31% 83.4%;*/
+    /*  padding-left: 83.4%;
+    padding-right: 12.64% ;*/
+    display: inline;
+    size: 18px;
+    line-height: 24.59px;
+    color: #191b43;
+}
+
+header {
+    border-bottom: solid 1px #eef0fc;
+}
 
 /*----------------------6-----------------------*/
 /*                     HERO                     */
 /*----------------------------------------------*/
+main{
+    display: grid;
+    gap: 28px;
+}
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.hero .container .hero__desc h1 {
+    font-size: 48px;
+    line-height: 65.57px;
+    color: #2b292d;
+    width: 400px;
+}
 
+.hero .container .hero__desc p {
+    font-size: 18px;
+    line-height: 69.51px;
+    color: #000000;
+}
+
+.hero .container .hero__desc .button.is-primary {
+    background-color: #3040c4;
+    border-radius: 41px;
+    color: #ffffff;
+    line-height: 24.59px;
+    font-size: 18px;
+    text-align: center;
+
+    padding: 20px 67px;
+}
+
+.hero .container .hero__image {
+    width: 722px;
+    height: 442px;
+    margin-left: 80px;
+}
+
+.hero .container .hero__imageimg {
+    mix-blend-mode: normal;
+}
 
 /*----------------------7-----------------------*/
 /*              MEET YOUR MATCH                 */
 /*----------------------------------------------*/
+.meetYourMatch .container .meetYourMatch__background {
+    position: absolute;
+    top: 523px;
+    width: 1280px;
+    height: 512px;
+    margin-left: 80px;
+    background: #EEF0FC;
+    border-radius: 18px;
+    z-index: -1;
 
+}
+
+.meetYourMatch .container .meetYourMatchــcontent h2 {
+    position: relative;
+    top: 77px;
+    font-size: 36px;
+    line-height: 49px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2b292d;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .switcher {
+    /*position: relative;
+    top: 28px;*/
+    width: 181px;
+
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent {
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+    gap: 77px;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent form.meetYourMatchــform {
+    display: grid;
+    gap: 44px;
+    justify-items: center;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .switcher label {
+    width: 46.39px;
+    height: 38.74px;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .switcher label input {
+    visibility: hidden;
+    /*display: none;*/
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .switcher span {
+    margin-top: 51px;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    color: #9fa2b8;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .switcher img{
+    background-color: transparent;
+}
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .form-group {
+    /* position: relative;
+    top: 51px;*/
+    width: 525px;
+    height: 64px;
+    margin: auto;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .form-group input {
+    width: 525px;/*156*/
+    height: 64px;
+    background: #ffffff;
+    border: 1px solid #3040c4;
+    border-radius: 41px;
+    color: #FFFFFF;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .meetYourMatchــform .form-group  .button{
+background: #3040C4;
+border-radius: 41px;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .widgets.is-searchResults{
+    display: flex;
+    flex-wrap: wrap;
+    gap:56px;
+}
+
+.meetYourMatch .container .meetYourMatchــcontent .widgets.is-searchResults .widget{
+    width: 230px;
+    height: 329px;
+    background: #FFFFFF;
+    box-shadow: 0px 76px 172px rgba(205, 213, 228, 0.3);
+}
+.meetYourMatch .container .meetYourMatchــcontent .widgets.is-searchResults .widget .widget__desc{
+    margin-left:18px;
+}
 
 
 /*----------------------8-----------------------*/
 /*               HOW IT WORKS                   */
 /*----------------------------------------------*/
+.howItWorks .container{
+   /* position: relative;
+    top: 144px;*/
+    text-align: center;
+    margin: auto;
+}
+.howItWorks .container .widgets.is-howItWorks{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1089px;
+    
+}
+.howItWorks .container .widgets.is-howItWorks .widget{
+    Width:291px;
+}
+.howItWorks .container .widgets.is-howItWorks .widget .widget__desc p{
 
-
-
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    
+    color: #6A6C79;
+    
+}
 /*----------------------9-----------------------*/
 /*                 STORIES                      */
 /*----------------------------------------------*/
+.stories .container{
+    margin: auto;
+    padding: 95px;
+    text-align: center;
+    background-color: #F6F6F9;
+}
+.stories .container .heading-paragraph{
+    word-wrap: break-word;
+    text-align: justify;
+    width: 574px;
+    color: #5F5F80;
+    font-size: 18px;
+    line-height: 25px;
 
+}
+.stories .container .widgets{
+    margin: auto;
+    display: flex;
+    gap: 16px;
+}
+.stories .container .widgets .widget__desc{
+    text-align: left;   
+}
+.stories .container .widgets .widget__desc h3{
+    font-size: 24px;
+}
+.stories .container .widgets .widget__desc a{
+    font-size: 14px;
+    color: #2329DB;
 
+}
 
 /*----------------------10----------------------*/
 /*       Actions: Change A Life, Adopt A Pet    */
 /*----------------------------------------------*/
 
-
-
 /*---------------------11-----------------------*/
 /*                    FOOTER                    */
 /*----------------------------------------------*/
-
-
 
 /*----------------------12----------------------*/
 /*                    Responsive                */
